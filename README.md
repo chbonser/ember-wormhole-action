@@ -14,7 +14,7 @@ action provides provides a clean interface for doing so.
 1. Make a component wormhole actionable using `mixin:wormhole-actionable`
 2. Use `helper:wormhole-action` to send an action sideways
 
-### mixin:wormhole-actionable
+### `mixin:wormhole-actionable`
 
 To make an action on a component wormhole actionable (1) mixin the
 `wormhole-actionable` mixin and (2) define a `wormholeActionableActions`
@@ -43,7 +43,7 @@ export default Ember.Component.extend(WormholeActionable, {
 });
 ```
 
-### helper:wormhole-action
+### `helper:wormhole-action`
 
 Use the helper to call a wormhole actionable action.  Note that
 `wormhole-action` will accept params to pass to the action.
