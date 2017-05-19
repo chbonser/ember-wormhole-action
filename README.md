@@ -1,5 +1,7 @@
 # Ember Wormhole Action
 
+[![CircleCI](https://circleci.com/gh/chbonser/ember-wormhole-action.svg?style=svg)](https://circleci.com/gh/chbonser/ember-wormhole-action)
+
 Nearly always state in an Ember application should be managed by following the 'data down,
 actions up' paradigm.  However there are some rare cases where
 it is reasonable to send actions sideways.  Ember wormhole
