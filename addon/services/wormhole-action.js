@@ -3,7 +3,11 @@ import Ember from 'ember';
 const { assert } = Ember;
 
 export default Ember.Service.extend({
-  _actions: {},
+  init() {
+    this._super(...arguments);
+    this._actions = {};
+  },
+  _actions: null,
   register(actionName, action, context) {
     if(this._actions[actionName]) {
       assert(`[service:wormhole-action] An action named, ${actionName}, was already registered`);

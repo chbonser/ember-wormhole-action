@@ -22,7 +22,9 @@ export default Ember.Mixin.create({
   },
 
   willDestroyElement() {
-    this.get('wormholeAction').unregister('openFAB');
+    this.get('wormholeActionableActions').forEach( actionable => {
+      this.get('wormholeAction').unregister(actionable.name);
+    });
     this._super(...arguments);
   },
 });
