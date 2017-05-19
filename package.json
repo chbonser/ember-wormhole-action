@@ -1,6 +1,6 @@
 {
   "name": "ember-wormhole-action",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An Ember Addon for sending actions sideways.",
   "keywords": [
     "ember-addon",
